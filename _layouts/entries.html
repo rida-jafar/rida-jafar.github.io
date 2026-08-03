@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title | default: "Writings" }}</title>
+     <link href="{{ site.baseurl }}/assets/style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+  {% include header.html %}
+    {% include header-normal.html %}
+    {% include sidebar.html %}
+
+    <main class="writing-layout">
+
+      <!-- === TOP HALF -->
+      <div class="writing-preview">
+        <div class="entries-intro">
+          <p class="header-bubble">Entries</p>
+          <p class="faded">{{ page.brief }}</p>
+        </div>
+
+        <div class="image-reveal-box">
+          <img class="image-reveal" src="">  
+        </div>
+      </div>
+
+
+      <!-- === BOTTOM HALF === -->
+      <div class="writing-list">
+        <table class="writing-table">
+          <colgroup>
+            <col class="col-small">
+            <col class="col-large">
+            <col class="col-medium">
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="table-date">Date</th>
+              <th class="table-title">Title</th>
+              <th class="table-category">Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% assign entries = site.entries | sort: 'date' | reverse %}
+            {% for entry in entries %}
+              <tr 
+  onclick="window.location='{{ entry.url }}';" 
+  class="image-row"
+  {% if entry.image %}data-image="{{ entry.image }}"{% endif %}>
+                <th class="table-date" scope="row">{{ entry.date | date: "%b %d, %Y" }}
+                </th>
+                <td class="table-title">{{ entry.title }}</td>
+                <td class="table-category">{{ entry.category }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+
+
+    </main>
+
+     {% include footer.html %}
+
+     <script src="{{ site.baseurl }}/assets/script.js"></script>
+    <script src="{{ site.baseurl }}/assets/image-hover.js"></script>
+  </body>
+</html>

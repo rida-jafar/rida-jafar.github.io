@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link href="{{ site.baseurl }}/assets/style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+  {% include header.html %}
+  {% include header-normal.html %}
+  {% include sidebar.html %}
+
+  <main class="{{ page.layout_class }}">
+    <div class="index-section">
+    <div class="index-info">
+    
+    <p class="header-bubble bubble-columns">
+    <span>{{ page.title }}</span>
+    {% if page.bar-side %}
+      <span class="faded">{{ page.bar-side }} </span>
+      {% endif %}
+    </p>
+
+      {{ content }}
+     
+    </div>
+    </div>
+  </main>
+
+    {% include footer.html %}
+
+ <script src="{{ site.baseurl }}/assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body class="">
+  {% include header.html %}
+  {% include header-normal.html %}
+
+  {% include sidebar.html %}
+
+  <main class="article-layout">
+
+    <!-- ==== ARTICLE SIDEBAR === -->
+
+    <aside class="article-sidebar">
+      <p class="header-bubble" style="margin-bottom: 10px;"><a style="color:var(--font-color); margin-top:0; padding:0;" href="{{ '/entries.html' | relative_url }}">← All entries</a></p>
+      {% if page.toc %}
+        <nav class="article-nav">  
+          <!-- TOC heading -->
+          <p style="font-weight:500; padding-top:4px; margin-top:0px">Table of Contents:</p>
+          <!-- Dynamic TOC list -->
+          <ul>
+            {% for item in page.toc %}
+            <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      {% endif %}
+    </aside>
+
+    <!-- === ARTICLE CONTENT === -->
+    <article class="article-content">
+      <p class="bubble-columns header-bubble"><span>{{ page.title }}</span><span class="article-meta-date"> {{ page.date | date: "%b %d, %Y"  }} </span></p>
+      <!-- <div class="meta-info">
+        <span class="">{{ page.date | date: "%B %-d, %Y" }}</span>
+      </div> -->
+      {% if page.image %}
+      <figure>
+      <img
+          src="{{ page.image }}"
+          style="width: {{ page.image_width | default: '100%' }};"
+          alt="{{ page.title }} cover image"
+        >
+      <figcaption> {{ page.fig_caption }} </figcaption>
+      </figure>
+      {% endif %}
+
+      <!-- 
+
+      {% if page.image %}
+        <img
+          src="{{ page.image }}"
+          style="width: {{ page.image_width | default: '100%' }}; margin-bottom: 1rem; margin-top: 1rem;"
+          alt="{{ page.title }} cover image"
+        >
+      {% endif %} -->
+      {{ content }}
+
+    </article>
+  </main>
+
+      {% include footer.html %}
+
+  <script src="{{ site.baseurl }}/assets/script.js"></script>
+  <script>
+    const button = document.getElementById('fullscreen-toggle');
+    button.addEventListener('click', () => {
+      document.body.classList.toggle('fullscreen');
+    });
+  </script>
+</body>
+</html>

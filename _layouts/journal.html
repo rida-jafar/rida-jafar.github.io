@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+
+    <link href="{{ site.baseurl }}/assets/style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+  {% include header.html %}
+{% include header-normal.html %}
+    {% include sidebar.html %}
+  {% include sidebar.html %}
+
+  
+    <main class="blog-layout">
+    <div class="blog-post">
+        <div class="blog-header">
+
+    
+
+
+            <p class="year-select" style="padding:4px 4px 4px 0px; margin:0px;">
+                Year Select: <span class="blog-select">2026</span>
+            </p>
+        </div>
+    </div>
+    
+    {% for post in site.posts %}
+    <div class="blog-post">
+        <div class="blog-header">
+            <div>
+                {{ post.date | date: "%B %d, %Y" }}:
+            </div>
+        </div>
+        <div class="blog-content">
+
+
+             <b style="color:var(--font-color); font-weight: 500;">{{ post.title }}</b><br>
+             <br>
+
+            {% if post.featured_image %}
+            <div class="blog-img">
+                <img src="{{ post.featured_image }}">
+            </div>
+            {% endif %}
+            
+            {% if post.image_gallery %}
+            <div class="image-scroll-container">
+                <div class="blog-img">
+                    {% for image in post.image_gallery %}
+                    <img src="{{ image }}">
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            <div class="blog-text">
+                
+         
+            {{ post.content }}
+               </div>
+        </div>
+    </div>
+    {% endfor %}
+</main>
+
+      {% include footer.html %}
+ <script src="{{ site.baseurl }}/assets/script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+**/formatting.md
+_entries/formatting.md
+**/robot-world.md
+_entries/robot-world.md
+**/garden-space.md
+_entries/garden-space.md
+_modules/
+_collection_list/
+_layouts/collection.html
+_layouts/collections.html
+collections.md

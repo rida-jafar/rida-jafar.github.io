@@ -1,0 +1,8 @@
+<figure 
+style="margin: {{ include.margin | default: '1.6em 0 1.6em 0' }}">
+  <img
+    src="{{ include.src }}"
+    style="width: {{ include.width | default: '100%' }}"
+    >
+  <figcaption>{{ include.caption }}</figcaption>
+</figure>

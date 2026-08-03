@@ -1,0 +1,42 @@
+<aside class="main-sidebar">
+  <nav class="main-nav">
+
+    <ul>
+
+      <p style="border-radius:6px; padding:4px 4px 4px 4px; background-color: var(--back-color); color: var(--font-color); margin:0px 0 10px 0">Navigation</p>
+
+
+    {% assign current_url = page.url %}
+{% for item in site.nav_links %}
+  {% assign is_selected = false %}
+
+  {% if current_url == item.url %}
+    {% assign is_selected = true %}
+  {% elsif item.base_urls %}
+    {% for base in item.base_urls %}
+      {% if current_url contains base %}
+        {% assign is_selected = true %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  <li class="{% if is_selected %}selected{% endif %}">
+    <a class="page-link" href="{{ item.url }}">{{ item.title }}</a>
+  </li>
+{% endfor %}
+
+
+
+<!-- page.url is '{{ page.url }}'
+item.url is '{{ item.url }}' -->
+
+    </ul>
+
+
+
+  </nav>
+   <div class="main-nav-footer">
+        
+    </div>
+</aside>
+
