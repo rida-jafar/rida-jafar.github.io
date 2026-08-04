@@ -15,7 +15,7 @@ layout_class: index-layout
 %}
 
 
-My MA thesis work examines how concepts and perspectives from 4E Cognition are informing ethical debates about BCIs. Right now, I'm working on a paper exploring the Extended Mind Thesis (EMT) and its application to neurorights debates (*under review*). I am also writing a paper about equal access to neurotechnologies (*draft in progress*).
+Right now, I'm working on a paper about the Extended Mind Thesis (EMT) and its application to neurorights debates (*under review*). I am also writing a paper about equal access to neurotechnologies (*draft in progress*).
 
 
 <hr>
