@@ -51,7 +51,7 @@ PRESENTATIONS AND POSTERS
 
 MISC
 
-1. APA Member Interview, Rida Jafar, Work/Life Balance Series (link available soon)
+1. APA Member Interview, Rida Jafar, Work/Life Balance Series (available October)
 
 <br>
 
