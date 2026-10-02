@@ -13,11 +13,13 @@ layout_class: index-layout
    margin="1rem 0 1rem 0"
 %}
 
-Hello ⸜(˃ ᵕ ˂ )⸝ I'm Rida, an MA philosophy student at the University of Guelph. I do research on the ethics and phenomenology of human-machine integration, with a specific focus on Brain-Computer Interfaces (BCIs). I also have interests in AI and robot ethics, especially when and where these intersect with cyborg ethics.
+Hello ⸜(˃ ᵕ ˂ )⸝ I'm Rida. I'm currently an MA philosophy student at the University of Guelph, where I'm exploring the ethics and phenomenology (subjective experience) of human-machine integration within the medical space. 
 
-Currently, I'm working on my thesis project, which examines how concepts and perspectives from 4E cognition are being applied to ethical debates about BCIs, particularly around questions of access and ownership.
+This research has included an analysis of technologies like biosensors, artificial pancreas systems and more recently, neuroprosthetics such as Brain-Computer Interfaces (BCIs). I also have interests in AI and robot ethics, especially when and where these intersect with cyborg ethics. 
 
-Alongside my academic pursuits, I like to make art, read sci-fi, design things, and imagine a brighter future.
+Tentatively speaking, my thesis project will examine how concepts and perspectives from 4E cognition are being applied to ethical conversations around BCIs. 
+
+Alongside my academic pursuits, I like to make art, read sci-fi, design things (like this site), and imagine a brighter future.
 
 <br>
 
@@ -69,10 +71,12 @@ Alongside my academic pursuits, I like to make art, read sci-fi, design things, 
             </div>
             <div class="col-2">
               <ul class="index-nav">
+                <li>AI Ethics</li>
                 <li>Neuroethics</li>
                 <li>Philosophy of Cognitive Science</li>
+                <li>Bioethics</li>
                 <li>Phenomenology</li>
-                <li>AI Ethics</li>
+
 
               </ul>
             </div>

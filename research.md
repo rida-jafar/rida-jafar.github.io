@@ -8,14 +8,7 @@ layout_class: index-layout
 ---
 
 
-{% include figure.html 
-   src="https://i.pinimg.com/originals/7f/2c/50/7f2c5092eb778b3423f634055ffea540.gif"
-   width="20%"
-   margin="1em 0 1em 0"
-%}
-
-
-Right now, I'm working on a paper about the Extended Mind Thesis (EMT) and its application to neurorights debates (*under review*). I am also writing a paper about equal access to neurotechnologies (*draft in progress*).
+Right now, I'm working on a paper about the Extended Mind Thesis (EMT) and its application to neurorights (*under review*). I am also writing a paper about equal access to Brain-Computer Interfaces (*accepted proposal, draft in progress*).
 
 
 <hr>
@@ -30,7 +23,7 @@ PUBLICATIONS
 <hr>
 
 
-PRESENTATIONS AND POSTERS
+PRESENTATIONS
 
 
 1. Moral Status of AI Companions: Why User Perceptions Matter
@@ -54,5 +47,13 @@ MISC
 1. APA Member Interview, Rida Jafar, Work/Life Balance Series (available October)
 
 <br>
+
+
+
+{% include figure.html 
+   src="https://i.pinimg.com/originals/7f/2c/50/7f2c5092eb778b3423f634055ffea540.gif"
+   width="20%"
+   margin="1em 0 1em 0"
+%}
 
 

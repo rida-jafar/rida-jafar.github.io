@@ -1,6 +1,6 @@
 /* ========== IMAGE-ON-HOVER DISPLAY  ======== */
 
-const imageSelect = "https://i.pinimg.com/736x/37/f1/6f/37f16f7ff7ba83b727d1a80b753eccf4.jpg"
+const imageSelect = "assets/images/mew-leaf.gif"
 const items = document.querySelectorAll('.image-row');
 const image = document.querySelector('.image-reveal');
 
